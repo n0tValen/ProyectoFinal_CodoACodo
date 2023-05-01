@@ -1,0 +1,33 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #D6BA8B;
+}
+
+.historia__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.historia__title,
+.ubicacion__title{
+    font-size: 60px;
+    text-decoration: underline;
+    color: #30241A;
+    margin: 30px;
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif; 
+}
+
+.ubicacion__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.ubicacion__column {
+    flex-direction: column;
+    width: 50%;
+}
