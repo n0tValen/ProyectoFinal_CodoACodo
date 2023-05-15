@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto </title>
+    <!-- CSS -->
+    <link href="contacto.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/logo-icono.ico">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1> Consultas </h1>
+    <section>
+        <form action="https://formspree.io/f/mnqyrgpk" method="post">
+            <div class="input-conteiner">
+                <label for="Nombre y Apellido" class="label">Nombre y Apellido</label>
+                <input type="text" name="Nombre y Apellido" id="Nombre y Apellido" required class="text-input"
+                    placeholder="John Doe">
+
+            </div>
+
+            <div class="input-conteiner">
+                <label for="Correo electrónico" class="label">Correo electrónico</label>
+                <input type="email" name="Correo electrónico" id="Correo electróinco" required
+                    class="text-input" placeholder="email@ejemplo.com">
+
+            </div>
+
+
+            <div class="input-conteiner">
+                <label for="Celular" class="label">Celular:</label>
+                <input type="tel" name="Celular" id="Celular" maxlength="15" required class="text-input"
+                    placeholder="11-66778899">
+            </div>
+
+            <div class="input-conteiner">
+                <label for="Motivo de consulta">Motivo de consulta</label>
+                <select name="Motivo de consulta" id="Motivo de consulta">
+                    <option></option>
+                    <option>Reservas</option>
+                    <option>Cumpleaños</option>
+                    <option>Horarios</option>
+                    <option>Juegos</option>
+                    <option>Menú</option>
+                    <option>Torneos</option>
+                    <option>Ubicación</option>
+                    <option>Precios</option>
+
+                </select>
+            </div>
+            <div class="input-conteiner">
+                <label for="">Consulta</label>
+                <textarea name="Consulta " id="Tu mensaje" cols="60" rows="10" maxlength="600"></textarea>
+            </div>
+
+            <div class="btn">
+                <input type="submit" value="ENVIAR">
+                <input type="reset" value="BORRAR">
+            </div>
+
+        </form>
+    </section>
+</body>
+
+</html>
