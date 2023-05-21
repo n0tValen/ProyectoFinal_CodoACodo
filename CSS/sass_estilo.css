@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&display=swap");
+/*--------------------------------------------------- General-----------------------------------------------------------------------------*/
+/*--Reinicio los marguenes--*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+/*--Animacion--*/
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+nav a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 0;
+  background-color: #C4A880;
+  transition: width 0.5s;
+}
+
+nav a:hover:after,
+nav a:focus:after {
+  width: 100%;
+}
+
+/*--------------------------------------------------- Queries-----------------------------------------------------------------------------*/
+/*--Header--*/
+.Header {
+  background-color: #30241A;
+}
+.Header__encabezado__logo {
+  text-align: center;
+}
+.Header__encabezado__logo img {
+  height: 125px;
+  width: 350px;
+}
+.Header__encabezado__principal__menu {
+  text-align: end;
+  height: 100%;
+}
+.Header__encabezado__principal__menu nav {
+  padding-top: 0px;
+  justify-content: center;
+}
+.Header__encabezado__principal__menu nav ul {
+  margin: 0;
+  padding: 0px;
+  align-items: center;
+  text-align: center;
+  list-style-type: none;
+  justify-content: space-around;
+  width: 100%;
+  line-height: 100px;
+  display: flex;
+}
+.Header__encabezado__principal__menu nav ul li {
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  text-decoration: none;
+}
+.Header__encabezado__principal__menu nav ul li a {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none; /*para que no se vea el subrayado del hipervinculo*/
+  font-family: cursive;
+  color: #C4A880;
+  animation-duration: 3s;
+  animation-name: aparecer;
+}
+
+/*--Main Index--*/
+.Main1 {
+  background-color: #333127;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center; /*eje y*/
+}
+.Main1_container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+.Main1_container_card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-bottom: 60px;
+}
+.Main1_container_card_card-image {
+  width: 400px;
+  height: 250px;
+}
+.Main1_container_card_card-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+.Main1_container_card_card-text {
+  margin: -30px auto;
+  margin-bottom: -50px;
+  height: 300px;
+  width: 300px;
+  background-color: #1D1C20;
+  color: #fff;
+  padding: 20px;
+}
+.Main1_container_card_card-text_card-meal-type {
+  font-style: italic;
+}
+.Main1_container_card_card-text_card-title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+.Main1_container_card_card-text_card-body {
+  font-size: 1.25rem;
+}
+.Main1_container_card_card-price {
+  width: 100px;
+  height: 100px;
+  background-color: #970C0A;
+  color: #fff;
+  margin-left: auto;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Main1_container_card > div {
+  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*--Footer--*/
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  width: 100%;
+  align-items: center;
+  background-color: #30241A;
+}
+.Footer__logo {
+  padding: 50px;
+}
+.Footer__redes_div {
+  margin-left: -150px;
+}
+.Footer__redes a {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.Footer__horarios ul {
+  margin: 0;
+  padding: 0;
+  align-items: flex-end;
+  text-align: right;
+  list-style-type: none; /*para que no tenga el punto*/
+}
+.Footer__horarios ul li {
+  margin-right: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: calc(5px + 1vw);
+  text-align: right;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: right;
+  font-weight: bold;
+  font-style: normal;
+  color: #C4A880;
+}
+
+/*--Tablets horizontal- Si la pantalla es al menos de 624px se aplica este estilo--*/
+/*--Tablets horizontal- Si la pantalla es al menos de 624px se aplica este estilo--*/
+/*--Notebook- Si la pantalla es al menos de 720px se aplica este estilo--*/
+/*--Televisor- Si la pantalla es al menos de 960px se aplica este estilo--*/
+
+/*# sourceMappingURL=sass_estilo.css.map */

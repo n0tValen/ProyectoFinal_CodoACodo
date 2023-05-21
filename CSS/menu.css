@@ -1,0 +1,435 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Quattrocento', serif;
+    list-style: none;
+}
+
+/* CSS ---> MENU  */
+
+/* Nav-Bar */
+header{
+    background-color: #30241A;
+}
+nav {
+   position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 125px;
+
+}
+
+.logo_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li {
+    display: inline-flex;
+    padding: 25px;
+    margin: 20px;
+    align-items: center;
+}
+
+nav a {
+    font-family: 'source sans pro',sans-serif;
+    color: #D6B98B;
+    font-size: 30px;
+}
+
+nav a:hover{
+    color: rgb(255, 234, 203);
+}
+
+/* Menu-Box */
+
+.menu-box {
+    width: 100%;
+    background-color: #D6B98B;
+    padding: 20px;
+}
+
+.menu-box h1 {
+    color: #30241a;
+    font-family: 'Garamond', regular;
+    padding: 20px;
+    font-size: 75px;
+    display: flex;
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline rgb(104, 84, 58);
+}
+
+.menu-box .menu-box_imagen {
+    width: 90%;
+    height: 90%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    background-color: #D6B98B;
+}
+
+.menu-box .menu-box_imagen .menu-imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.menu-box .menu-box_imagen .menu-imagen img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.menu-box .menu-box_imagen .menu-imagen:hover img {
+    opacity: 0.4;
+}
+
+.menu-box .menu-box_imagen .menu-imagen h3 {
+    position: absolute;
+    font-size: 35px;
+    margin-bottom: 130px;
+    color: bisque;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.menu-box .menu-box_imagen .menu-imagen:hover h3 {
+    opacity: 1;
+}
+
+.menu-box .menu-box_imagen .menu-imagen p {
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 400px;
+    margin-top: 30px;
+    text-align: center;
+    color: aliceblue;
+    line-height: 22px;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.menu-box .menu-box_imagen .menu-imagen:hover p {
+    opacity: 1;
+}
+
+.menu-box .menu-box_imagen .menu-imagen .menu_btn {
+    position: absolute;
+    font-family: 'Source Sans Pro', serif;
+    font-size: 20px;
+    margin-top: 180px;
+    color: #000;
+    background-color: burlywood;
+    padding: 7px 25px;
+    opacity: 0;
+    transform: translateY(45px);
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.menu-box .menu-box_imagen .menu-imagen:hover .menu_btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Separador Logo */
+
+.separador-logo {
+    width: 100%;
+    height: 150px;
+    background-color: #30241A;
+}
+
+.separador-logo .separador-logo_img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.separador-logo_img img {
+    padding: 25px;
+    height: 25%;
+    width: 18%;
+}
+
+
+/* Menu-Carta */
+.menu-carta {
+    background-color: bisque;
+    padding: 50px;
+    width: 100%;
+
+}
+
+.menu-carta h2 {
+    color: #30241a;
+    font-family: 'Garamond', regular;
+    padding: 25px;
+    font-size: 60px;
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline rgb(224, 182, 126);
+
+}
+
+.menu-carta h3 {
+    color: #30241A;
+    font-family: 'Quattrocento', serif;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/* Menu-Carta Comida */
+
+.menu-carta_comida {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 400px;
+    row-gap: 15px;
+
+}
+
+.menu-carta_plato {
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.menu-carta_plato li {
+    font-family: 'source sans pro', sans-serif;
+    color: #3f352c;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.precio-plato-carta {
+    display: flex;
+    align-items: start;
+    justify-content: right;
+}
+
+.precio-plato-carta li {
+    margin-left: .6rem;
+    margin-right: .6rem;
+    margin-top: 1rem;
+    font-weight: lighter;
+}
+
+/* Menu-Carta Bebida */
+
+.menu-carta_bebida {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 400px;
+    row-gap: 15px;
+
+}
+
+.cafeteria {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 50px;
+
+}
+
+.cafeteria li {
+    font-family: 'source sans pro', sans-serif;
+    color: #3f352c;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.menu-carta_bebidas {
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.menu-carta_bebidas li {
+    font-family: 'source sans pro', serif;
+    color: #3f352c;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.precio-bebidas-carta {
+    display: flex;
+    align-items: start;
+    justify-content: right;
+}
+
+.precio-bebidas-carta li {
+    margin-left: .6rem;
+    margin-right: .6rem;
+    margin-top: 1rem;
+    font-weight: lighter;
+}
+
+hr {
+    position: initial;
+    width: 180%;
+    bottom: 6px;
+    margin-bottom: 1rem;
+    margin-left: 6rem;
+    border: 0.6px dashed #5a5957;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #30241A;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 25px; 
+    
+}
+
+.logo_img img{
+    height: 45%;
+    width: 70%;
+}
+
+@media only screen and (max-width:1024px) and (min-width:768px) {
+    .menu-box .menu-box_imagen {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav a{
+        display: inline;
+       font-size: 15px;
+    }
+
+   .footer {
+        height: 200px;
+    }
+
+    .logo_img img {
+        height: 30%;
+        width: 70%;
+    }
+
+    .separador-logo img {
+        height: 30%;
+        width: 30%;
+    }
+
+    .menu-carta_comida {
+        margin: 0 150px;
+    }
+
+    .menu-carta_bebida {
+        margin: 0 150px;
+    }
+
+    hr {
+        width: 155%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .menu-box .menu-box_imagen {
+        grid-template-columns: 1fr;
+    }
+
+    nav a{
+        display: inline;
+       font-size: 0px;
+    }
+
+   .footer {
+        height: 200px;
+    }
+
+    .logo_img img {
+        height: 30%;
+        width: 70%;
+    }
+
+    .separador-logo img {
+        height: 30%;
+        width: 50%;
+    }
+
+    .menu-carta h2 {
+        font-size: 50px;
+        padding: 10px;
+    }
+
+    .menu-carta_comida {
+        margin: 0 130px;
+    }
+
+    .menu-carta_bebida {
+        margin: 0 130px;
+    }
+
+    hr {
+        width: 130%;
+    }
+
+}
+
+@media only screen and (max-width:480px) {
+    .menu-box .menu-box_imagen {
+        grid-template-columns: 1fr;
+    }
+
+    .separador-logo_img img {
+        height: 50%;
+        width: 65%;
+    }
+
+    .logo_img img {
+        height: 30%;
+        width: 100%;
+    }
+
+    .menu-box h1 {
+        font-size: 60px;
+    }
+
+    .menu-carta h2 {
+        font-size: 45px;
+        padding: 10px;
+    }
+
+    .menu-carta h3 {
+        font-size: 30px;
+    }
+
+    .menu-carta_comida {
+        margin: 0 35px;
+    }
+
+    .menu-carta_bebida {
+        margin: 0 35px;
+    }
+
+    hr {
+        width: 93%;
+    }
+}
