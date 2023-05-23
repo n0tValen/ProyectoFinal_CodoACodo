@@ -38,7 +38,7 @@
     width: 60%;
     transform: translate(-50%, -50%);
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -59,17 +59,21 @@
 
 .ubicacion__row {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: flex-end;
+    align-items: center;
 }
+
 
 .ubicacion__text {
     width: 50%;
     font-weight: bold;
     font-family: 'Source Sans Pro', sans-serif;
-    padding: 15px;
+    padding: 100px;
 }
 
 iframe {
+ 
     width: 50%;
     padding: 15px;
 }
