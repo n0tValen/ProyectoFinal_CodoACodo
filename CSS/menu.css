@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Quattrocento&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -56,7 +59,7 @@ nav a:hover{
 
 .menu-box h1 {
     color: #30241a;
-    font-family: 'Garamond', regular;
+    font-family: 'EB Garamond', serif !important;
     padding: 20px;
     font-size: 75px;
     display: flex;
@@ -135,6 +138,7 @@ nav a:hover{
     transform: translateY(45px);
     z-index: 5;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .menu-box .menu-box_imagen .menu-imagen:hover .menu_btn {
@@ -174,7 +178,7 @@ nav a:hover{
 
 .menu-carta h2 {
     color: #30241a;
-    font-family: 'Garamond', regular;
+    font-family: 'EB Garamond', serif;
     padding: 25px;
     font-size: 60px;
     display: flex;
@@ -188,6 +192,7 @@ nav a:hover{
 .menu-carta h3 {
     color: #30241A;
     font-family: 'Quattrocento', serif;
+    font-weight: bolder;
     font-size: 35px;
     margin-top: 30px;
     margin-left: 50px;
@@ -210,11 +215,11 @@ nav a:hover{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     font-weight: bold;
-    margin-left: 50px;
+    /*margin-left: 50px;*/
 }
 
 .menu-carta_plato li {
-    font-family: 'source sans pro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     color: #3f352c;
     margin-top: 1rem;
     font-weight: bold;
@@ -222,14 +227,14 @@ nav a:hover{
 
 .precio-plato-carta {
     display: flex;
-    align-items: start;
-    justify-content: right;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .precio-plato-carta li {
     margin-left: .6rem;
     margin-right: .6rem;
-    margin-top: 1rem;
+    margin-bottom: 2rem;
     font-weight: lighter;
 }
 
@@ -276,24 +281,27 @@ nav a:hover{
 
 .precio-bebidas-carta {
     display: flex;
-    align-items: start;
-    justify-content: right;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .precio-bebidas-carta li {
     margin-left: .6rem;
     margin-right: .6rem;
-    margin-top: 1rem;
+    margin-bottom: 2rem;
     font-weight: lighter;
 }
 
 hr {
-    position: initial;
+    /*position: initial;*/
+   /* align-items: center;*/
     width: 180%;
-    bottom: 6px;
-    margin-bottom: 1rem;
+    /*bottom: 6px;*/
+    /*margin-bottom: 1rem;*/
     margin-left: 6rem;
-    border: 0.6px dashed #5a5957;
+    border: thin dotted;
+    color: #30241A;
+    opacity: 0.5;
 }
 
 /* Footer */
@@ -333,8 +341,8 @@ footer{
     }
 
     .separador-logo img {
-        height: 30%;
-        width: 30%;
+        height: 70%;
+        width: 70%;
     }
 
     .menu-carta_comida {
