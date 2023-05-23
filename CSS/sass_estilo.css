@@ -1,11 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Quattrocento&display=swap');
 /*--------------------------------------------------- General-----------------------------------------------------------------------------*/
 /*--Reinicio los marguenes--*/
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Playfair Display", serif;
+  font-family: 'Quattrocento', serif;
+  text-decoration: none;
 }
 
 /*--Animacion--*/
@@ -16,6 +19,8 @@
   100% {
     opacity: 1;
   }
+
+
 }
 nav a:after {
   content: "";
@@ -25,16 +30,20 @@ nav a:after {
   height: 2px;
   width: 0;
   background-color: #C4A880;
+  color: #ffe4c4;
   transition: width 0.5s;
 }
 
 nav a:hover:after,
 nav a:focus:after {
   width: 100%;
-}
+  color: #ffe4c4;
+} 
+
 
 /*--------------------------------------------------- Queries-----------------------------------------------------------------------------*/
 /*--Header--*/
+
 .Header {
   background-color: #30241A;
 }
@@ -59,7 +68,7 @@ nav a:focus:after {
   align-items: center;
   text-align: center;
   list-style-type: none;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   line-height: 100px;
   display: flex;
@@ -75,15 +84,20 @@ nav a:focus:after {
   text-align: center;
   font-weight: bold;
   text-decoration: none; /*para que no se vea el subrayado del hipervinculo*/
-  font-family: cursive;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: normal;
   color: #C4A880;
   animation-duration: 3s;
   animation-name: aparecer;
+} 
+
+.Header__encabezado__principal__menu .nav-link:hover{
+  color: #867155;
 }
 
 /*--Main Index--*/
 .Main1 {
-  background-color: #333127;
+  background-color: #ffe4c4;
   display: flex;
   height: 100%;
   width: 100%;
@@ -103,8 +117,8 @@ nav a:focus:after {
   margin-bottom: 60px;
 }
 .Main1_container_card_card-image {
-  width: 400px;
-  height: 250px;
+  width: 70%;
+  height: 300px;
 }
 .Main1_container_card_card-image > img {
   width: 100%;
@@ -117,7 +131,7 @@ nav a:focus:after {
   margin-bottom: -50px;
   height: 300px;
   width: 300px;
-  background-color: #1D1C20;
+  background-color: #a18663;
   color: #fff;
   padding: 20px;
 }
@@ -135,14 +149,24 @@ nav a:focus:after {
 .Main1_container_card_card-price {
   width: 100px;
   height: 100px;
-  background-color: #970C0A;
-  color: #fff;
+  background-color: #852b29;
   margin-left: auto;
-  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.Main1_container_card_card-price a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'Quattrocento', serif;
+}
+
+.Main1_container_card_card-price a:hover{
+  color: #C4A880;
+}
+
 .Main1_container_card > div {
   box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
 }
@@ -167,6 +191,7 @@ nav a:focus:after {
   margin-bottom: 20px;
   margin-right: 20px;
   margin-left: 20px;
+  text-decoration: none;
 }
 .Footer__horarios ul {
   margin: 0;
@@ -181,11 +206,9 @@ nav a:focus:after {
   margin-bottom: 10px;
   font-size: calc(5px + 1vw);
   text-align: right;
-  font-weight: bold;
   text-decoration: none;
-  text-align: right;
-  font-weight: bold;
-  font-style: normal;
+  font-weight: lighter;
+  font-style: 'Source Sans Pro', sans-serif;
   color: #C4A880;
 }
 
