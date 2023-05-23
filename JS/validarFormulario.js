@@ -1,19 +1,20 @@
-const $form = document.querySelector('#form')
+var form = document.getElementById('form')
 
-$form.addEventListener('submit', handleSubmit)
-
-async function handleSubmit(event){
-    event.preventDefault()
-    const form =  new FormData(this)
-    const reponse = await fetch(this.action,{
+async function handleSubmit(event) {
+    event.preventDefault();
+    const $form = new FormData(this)
+    const response = await fetch(this.action, {
         method: this.method,
-        body: form,
-        header:{
-            'Acept':'aplication/json'
+        body: $form,
+        headers: {
+            'Accept': 'application/json'
         }
     })
-    if (reponse.ok){
+    if (response.ok) {
         this.reset()
-        alert('Gracias por contactarte con nosotros, en breve responderemos tu consuta')
+        alert('Gracias por contactarte, en breve responderemos tu consuta')
     }
+
 }
+
+form.addEventListener('submit', handleSubmit)
