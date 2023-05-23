@@ -61,7 +61,8 @@
 <body>
     <h1> Consultas </h1>
     <section>
-        <form action="https://formspree.io/f/mnqyrgpk" method="post" id="form">
+        <form id="form"  action="https://formspree.io/f/mnqyrgpk"
+        method="POST" >
             <div class="input-conteiner">
                 <label for="Nombre y Apellido" class="label">Nombre y Apellido</label>
                 <input type="text" name="Nombre y Apellido" id="Nombre y Apellido" required class="text-input"
@@ -107,7 +108,7 @@
                 <input type="submit" value="ENVIAR">
                 <input type="reset" value="BORRAR">
             </div>
-
+            <p id="my-form-status"></p>
         </form>
     </section>
      <!--Empieza el Footer-->
@@ -162,7 +163,8 @@
    
 </horarios>
 </footer>
-<script src="/JS/validarFormulario.js"></script>
+<script src="/JS/validarFormulario.js">
+</script>
 <!--Termina el Footer-->
      <!--Empieza Boostrap-->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
