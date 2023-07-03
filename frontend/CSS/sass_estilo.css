@@ -181,15 +181,15 @@ nav a:focus:after {
   background-color: #30241A;
 }
 .Footer__logo {
-  padding: 50px;
+  padding: 20px;
 }
 .Footer__redes_div {
-  margin-left: -150px;
+  margin-left: 0px;
 }
 .Footer__redes a {
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-right: 20px;
+ 
   margin-left: 20px;
   text-decoration: none;
 }
@@ -211,7 +211,38 @@ nav a:focus:after {
   font-style: 'Source Sans Pro', sans-serif;
   color: #C4A880;
 }
+@media only screen and (max-width: 480px){
+  .Footer{
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
 
+  .Footer__logo{
+    padding: 0;
+    margin: 10px;
+  }
+
+  .Header__encabezado__logo img{
+    height: 50px;
+    width: 150px;
+  }
+
+  .Footer__horarios{
+    margin: 10px;
+  }
+
+  .Footer__redes_div{
+    margin: 0px;
+    /*display: flex;*/
+  }
+
+  .Footer__redes_div svg{
+    
+    height: 20px;
+    width: 30px;
+  }
+}
 /*--Tablets horizontal- Si la pantalla es al menos de 624px se aplica este estilo--*/
 /*--Tablets horizontal- Si la pantalla es al menos de 624px se aplica este estilo--*/
 /*--Notebook- Si la pantalla es al menos de 720px se aplica este estilo--*/

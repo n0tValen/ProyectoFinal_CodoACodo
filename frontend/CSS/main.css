@@ -99,6 +99,7 @@ iframe {
       width: 100%;
       text-align: center;
       margin-bottom: 10px;
+      padding: 15px;
     }
     
     iframe {
@@ -116,7 +117,7 @@ iframe {
 @media only screen and (max-width: 767px) {
     .historia__title {
       font-size: 36px;
-      top: 35%;
+      top: 25%;
     }
     
     .historia__text {
@@ -144,7 +145,7 @@ iframe {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .historia__title {
     font-size: 57px;
-    top: 40%;
+    top: 30%;
   }
   
   .historia__text {
@@ -162,6 +163,7 @@ iframe {
     width: 100%;
     text-align: center;
     margin: 0 auto;
+    padding: 20px;
   }
   
   iframe {
