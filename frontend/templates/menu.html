@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!--Animacion-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="/frontend/CSS/sass_estilo.css" />
+    <link rel="shortcut icon" href="/frontend/img/logo-icono.ico" />
+    <link rel="stylesheet" href="/frontend/CSS/sass_estilo.css" />
+    <link rel="stylesheet" href="/frontend/CSS/menu.css" />
+
+    <title>Menú</title>
+  </head>
+
+  <body>
+    <!--Empieza el Header-->
+    <header class="Header container-fluid">
+      <div class="row justify-content-evenly">
+        <div>
+          <div class="Header__encabezado__principal__menu">
+            <nav class="navbar navbar-expand-md">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                style="border-color: #7e6740; color: #c0a87f"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="menu.html"
+                      >Menu<span class="sr-only"></span
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://hipolink.me/CafeSanBernardo"
+                      >Juegos</a
+                    >
+                  </li>
+                  <logo class="Header__encabezado__logo">
+                    <a href="index.html"
+                      ><img src="/frontend/Multimedia/Logo.png" alt="Logo"
+                    /></a>
+                  </logo>
+                  <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="products.html"
+                      >Productos</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Termina el Header-->
+    <!-- Main -->
+    <main>
+      <!-- Menu-Box -->
+      <div class="menu-box">
+        <h1>Carta</h1>
+        <div class="menu-box_imagen">
+          <div class="menu-imagen">
+            <img src="/frontend/img/desayuno.jpg" />
+            <h3>Desayunos y Meriendas</h3>
+            <p>Espresso, Exprimidos y más.</p>
+            <a href="#menu-carta_cafeteria" class="menu_btn"> Ver menu</a>
+          </div>
+
+          <div class="menu-imagen">
+            <img src="/frontend/img/picada.jpg" />
+            <h3>Tablas y Picadas</h3>
+            <p>Quesos, fiambres, tortillas y más.</p>
+            <a href="#menu-carta_picada" class="menu_btn"> Ver menu</a>
+          </div>
+
+          <div class="menu-imagen">
+            <img src="/frontend/img/copas.jpg" />
+            <h3>Copas</h3>
+            <p>Licores, Cervezas, Aperitivos y más.</p>
+            <a href="#menu-carta_bebida" class="menu_btn"> Ver menu</a>
+          </div>
+
+          <div class="menu-imagen">
+            <img src="/frontend/img/platofrio.jpg" />
+            <h3>Platos Frios y Calientes</h3>
+            <p>Pizzas, Milanesas, Sandwiches Frios y más.</p>
+            <a href="#menu-carta_platofrio" class="menu_btn"> Ver menu</a>
+          </div>
+        </div>
+      </div>
+      <!-- Separador -->
+      <div class="separador-logo">
+        <div class="separador-logo_img">
+          <img src="/frontend/img/img-logo.png" />
+        </div>
+      </div>
+      <!-- Menu-Carta -->
+      <div class="menu-carta">
+        <h2>Platillos</h2>
+        <div class="menu-carta_comida">
+          <h3>Hamburguesas Caseras</h3>
+          <div class="menu-carta_plato">
+            <ul>
+              <li>Simple con queso</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Clásica</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Villa Crespo</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>La Sanber</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>La Veganisima</li>
+              <hr style="left: 166px; right: 44px" />
+            </ul>
+            <div class="precio-plato-carta">
+              <ul>
+                <li>$1770</li>
+                <li>$2080</li>
+                <li>$2360</li>
+                <li>$2170</li>
+                <li>$2310</li>
+              </ul>
+            </div>
+          </div>
+          <h3>Milanesas</h3>
+          <div class="menu-carta_plato" id="menu-carta_platofrio">
+            <ul>
+              <li>Simple</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Completa</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Napolitana</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>La Sanber</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Fugazzeta</li>
+              <hr style="left: 166px; right: 44px" />
+            </ul>
+            <div class="precio-plato-carta">
+              <ul>
+                <li>$1930</li>
+                <li>$2080</li>
+                <li>$2310</li>
+                <li>$2460</li>
+                <li>$2310</li>
+              </ul>
+            </div>
+          </div>
+          <h3>Papas Fritas</h3>
+          <div class="menu-carta_plato" id="menu-carta_picada">
+            <ul>
+              <li>Papas solas</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Provenzal</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Gratinadas</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Cheddar</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Sanber</li>
+              <hr style="left: 166px; right: 44px" />
+            </ul>
+            <div class="precio-plato-carta">
+              <ul>
+                <li>$1190</li>
+                <li>$1250</li>
+                <li>$1320</li>
+                <li>$1480</li>
+                <li>$1620</li>
+              </ul>
+            </div>
+          </div>
+          <h3>Tortillas</h3>
+          <div class="menu-carta_plato">
+            <ul>
+              <li>Papa sola</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Con cebolla</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Con queso</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Con queso y cebolla</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Española</li>
+              <hr style="left: 166px; right: 44px" />
+            </ul>
+            <div class="precio-plato-carta">
+              <ul>
+                <li>$1320</li>
+                <li>$1470</li>
+                <li>$1520</li>
+                <li>$1730</li>
+                <li>$2100</li>
+              </ul>
+            </div>
+          </div>
+          <h3>Pizzas</h3>
+          <div class="menu-carta_plato">
+            <ul>
+              <li>Muzzarella</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Napolitana</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Jamón y morrón</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Rúcula</li>
+              <hr style="left: 166px; right: 44px" />
+            </ul>
+            <div class="precio-plato-carta">
+              <ul>
+                <li>$1960</li>
+                <li>$2310</li>
+                <li>$2560</li>
+                <li>$1450</li>
+              </ul>
+            </div>
+          </div>
+          <h3>Ensaladas</h3>
+          <div class="menu-carta_plato">
+            <ul>
+              <li>Tradicional</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Caprese</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Carambola</li>
+              <hr style="left: 166px; right: 44px" />
+            </ul>
+            <div class="precio-plato-carta">
+              <ul>
+                <li>$1230</li>
+                <li>$1480</li>
+                <li>$1590</li>
+              </ul>
+            </div>
+          </div>
+          <h3>Picadas</h3>
+          <div class="menu-carta_plato">
+            <ul>
+              <ul>
+                <li>Jamón cocido</li>
+                <hr style="left: 166px; right: 44px" />
+                <li>Salame</li>
+                <hr style="left: 166px; right: 44px" />
+              </ul>
+              <ul>
+                <li>Berenjenas al escabeche</li>
+                <hr style="left: 166px; right: 44px" />
+                <li>Aceitunas verdes</li>
+                <hr style="left: 166px; right: 44px" />
+              </ul>
+              <ul>
+                <li>Danbo</li>
+                <hr style="left: 166px; right: 44px" />
+                <li>Sardo</li>
+                <hr style="left: 166px; right: 44px" />
+              </ul>
+            </ul>
+            <div class="precio-plato-carta">
+              <ul>
+                <li>$360</li>
+                <li>$163</li>
+                <li>$420</li>
+                <li>$463</li>
+                <li>$530</li>
+                <li>$231</li>
+              </ul>
+            </div>
+          </div>
+          <h3>Sandwiches Frios</h3>
+          <div class="menu-carta_plato">
+            <ul>
+              <li>Solo queso</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Queso y tomate</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Jamón cocido y queso</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Salame y queso</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Jamón crudo y queso</li>
+              <hr style="left: 166px; right: 44px" />
+            </ul>
+            <div class="precio-plato-carta">
+              <ul>
+                <li>$1140</li>
+                <li>$1250</li>
+                <li>$1220</li>
+                <li>$1130</li>
+                <li>$1560</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <h2>Bebidas</h2>
+        <div class="menu-carta_bebida">
+          <h3>Cafeteria</h3>
+          <div class="cafeteria" id="menu-carta_cafeteria">
+            <div class="espresso">
+              <ul>
+                <li>Café pocillo</li>
+                <hr style="left: 166px; right: 44px" />
+                <li>Café doble</li>
+                <hr style="left: 166px; right: 44px" />
+                <li>Cortado largo</li>
+                <hr style="left: 166px; right: 44px" />
+                <li>Café con leche</li>
+                <hr style="left: 166px; right: 44px" />
+                <li>Capuchino</li>
+                <hr style="left: 166px; right: 44px" />
+                <li>Té/Mate cocido</li>
+                <hr style="left: 166px; right: 44px" />
+                <li>Vaso de leche</li>
+                <hr style="left: 166px; right: 44px" />
+                <li>Submarino</li>
+                <hr style="left: 166px; right: 44px" />
+              </ul>
+            </div>
+
+            <div class="precio-bebidas-carta">
+              <ul>
+                <li>$400</li>
+                <li>$600</li>
+                <li>$450</li>
+                <li>$560</li>
+                <li>$570</li>
+                <li>$350</li>
+                <li>$360</li>
+                <li>$570</li>
+              </ul>
+            </div>
+          </div>
+          <h3>Licores</h3>
+          <div class="menu-carta_bebidas">
+            <ul>
+              <li>8 Hermanos</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Legui</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Bailey's</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Sheridans</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Café Borghetti</li>
+              <hr style="left: 166px; right: 44px" />
+            </ul>
+            <div class="precio-bebidas-carta">
+              <ul>
+                <li>$700</li>
+                <li>$1030</li>
+                <li>$586</li>
+                <li>$798</li>
+                <li>$945</li>
+              </ul>
+            </div>
+          </div>
+          <h3>Aperitivos</h3>
+          <div class="menu-carta_bebidas">
+            <ul>
+              <li>Gancia</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Cinzano</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Campari</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Fernet Branca</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Amargo Obrero</li>
+              <hr style="left: 166px; right: 44px" />
+            </ul>
+            <div class="precio-bebidas-carta">
+              <ul>
+                <li>$850</li>
+                <li>$745</li>
+                <li>$630</li>
+                <li>$850</li>
+                <li>$475</li>
+              </ul>
+            </div>
+          </div>
+          <h3>Vinos</h3>
+          <div class="menu-carta_bebidas">
+            <ul>
+              <li>Alma Mora</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Santa Julia Chardonnnay</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Norton Mil Rosas</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>New Age</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Vaso Moscato Crotta</li>
+              <hr style="left: 166px; right: 44px" />
+            </ul>
+            <div class="precio-bebidas-carta">
+              <ul>
+                <li>$1090</li>
+                <li>$1320</li>
+                <li>$1600</li>
+                <li>$2030</li>
+                <li>$2490</li>
+              </ul>
+            </div>
+          </div>
+          <h3>Cervezas</h3>
+          <div class="menu-carta_bebidas">
+            <ul>
+              <li>Quilmes Clásica</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Andes IPA</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Stella Artois</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Brahma Chopp</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Patagonia Amber Lager</li>
+              <hr style="left: 166px; right: 44px" />
+            </ul>
+            <div class="precio-bebidas-carta">
+              <ul>
+                <li>$630</li>
+                <li>$950</li>
+                <li>$580</li>
+                <li>$700</li>
+                <li>$950</li>
+              </ul>
+            </div>
+          </div>
+          <h3>Ron</h3>
+          <div class="menu-carta_bebidas">
+            <ul>
+              <li>Havana 7 años</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Malibu</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Bacardí</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Captain Morgan</li>
+              <hr style="left: 166px; right: 44px" />
+            </ul>
+            <div class="precio-bebidas-carta">
+              <ul>
+                <li>$1530</li>
+                <li>$1000</li>
+                <li>$1200</li>
+                <li>$800</li>
+              </ul>
+            </div>
+          </div>
+          <h3>Vodka</h3>
+          <div class="menu-carta_bebidas" id="menu-carta_bebida">
+            <ul>
+              <li>Sernova</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Smirnoff</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Absolut</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Grey Goose</li>
+              <hr style="left: 166px; right: 44px" />
+            </ul>
+            <div class="precio-bebidas-carta">
+              <ul>
+                <li>$800</li>
+                <li>$900</li>
+                <li>$1230</li>
+                <li>$2500</li>
+              </ul>
+            </div>
+          </div>
+          <h3>Gin</h3>
+          <div class="menu-carta_bebidas">
+            <ul>
+              <li>Gordons</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Bombay Shapphire</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Brighton</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Príncipe de los Apóstoles</li>
+              <hr style="left: 166px; right: 44px" />
+              <li>Beefeater</li>
+              <hr style="left: 166px; right: 44px" />
+            </ul>
+            <div class="precio-bebidas-carta">
+              <ul>
+                <li>$865</li>
+                <li>$900</li>
+                <li>$1050</li>
+                <li>$1500</li>
+                <li>$2100</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Empieza el Footer-->
+    <footer class="Footer overflow-hidden">
+      <logo class="Header__encabezado__logo Footer__logo">
+        <img src="/frontend/Multimedia/Logo.png" alt="Logo" />
+      </logo>
+
+      <redes class="Footer__redes">
+        <div class="Footer__redes_div">
+          <a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+          >
+            <svg
+              width="55"
+              height="39"
+              viewBox="0 0 55 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 27.8571L36.2725 19.5L22 11.1429V27.8571ZM53.79 6.045C54.1475 7.35429 54.395 9.10929 54.56 11.3379C54.7525 13.5664 54.835 15.4886 54.835 17.16L55 19.5C55 25.6007 54.56 30.0857 53.79 32.955C53.1025 35.4621 51.5075 37.0779 49.0325 37.7743C47.74 38.1364 45.375 38.3871 41.745 38.5543C38.17 38.7493 34.8975 38.8329 31.8725 38.8329L27.5 39C15.9775 39 8.8 38.5543 5.9675 37.7743C3.4925 37.0779 1.8975 35.4621 1.21 32.955C0.8525 31.6457 0.605 29.8907 0.44 27.6621C0.2475 25.4336 0.165 23.5114 0.165 21.84L0 19.5C0 13.3993 0.44 8.91429 1.21 6.045C1.8975 3.53786 3.4925 1.92214 5.9675 1.22571C7.26 0.863572 9.625 0.612857 13.255 0.445714C16.83 0.250714 20.1025 0.167143 23.1275 0.167143L27.5 0C39.0225 0 46.2 0.445714 49.0325 1.22571C51.5075 1.92214 53.1025 3.53786 53.79 6.045Z"
+                fill="#D6BA8B"
+              />
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/CafeSanBernardo1912">
+            <svg
+              width="55"
+              height="39"
+              viewBox="0 0 55 55"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M55 27.5689C55 12.3509 42.68 0 27.5 0C12.32 0 0 12.3509 0 27.5689C0 40.9123 9.46 52.0226 22 54.5865V35.8396H16.5V27.5689H22V20.6767C22 15.3559 26.3175 11.0276 31.625 11.0276H38.5V19.2982H33C31.4875 19.2982 30.25 20.5388 30.25 22.0551V27.5689H38.5V35.8396H30.25V55C44.1375 53.6216 55 41.8772 55 27.5689Z"
+                fill="#D6BA8B"
+              />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/cafesanbernardo/">
+            <svg
+              width="55"
+              height="39"
+              viewBox="0 0 55 55"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M27.5 0C34.9717 0 35.904 0.0274998 38.8355 0.165C41.7642 0.3025 43.758 0.76175 45.5125 1.44375C47.3275 2.14225 48.8565 3.08825 50.3855 4.6145C51.7839 5.98921 52.8659 7.65212 53.5563 9.4875C54.2355 11.2392 54.6975 13.2357 54.835 16.1645C54.9643 19.096 55 20.0282 55 27.5C55 34.9717 54.9725 35.904 54.835 38.8355C54.6975 41.7642 54.2355 43.758 53.5563 45.5125C52.8679 47.3489 51.7856 49.0122 50.3855 50.3855C49.0104 51.7834 47.3476 52.8653 45.5125 53.5563C43.7607 54.2355 41.7642 54.6975 38.8355 54.835C35.904 54.9643 34.9717 55 27.5 55C20.0282 55 19.096 54.9725 16.1645 54.835C13.2357 54.6975 11.242 54.2355 9.4875 53.5563C7.6514 52.8673 5.9882 51.7851 4.6145 50.3855C3.21587 49.011 2.13381 47.348 1.44375 45.5125C0.76175 43.7607 0.3025 41.7642 0.165 38.8355C0.0357498 35.904 0 34.9717 0 27.5C0 20.0282 0.0274998 19.096 0.165 16.1645C0.3025 13.233 0.76175 11.242 1.44375 9.4875C2.1319 7.65099 3.21421 5.98763 4.6145 4.6145C5.9886 3.21539 7.65168 2.13326 9.4875 1.44375C11.242 0.76175 13.233 0.3025 16.1645 0.165C19.096 0.0357498 20.0282 0 27.5 0ZM27.5 13.75C23.8533 13.75 20.3559 15.1987 17.7773 17.7773C15.1987 20.3559 13.75 23.8533 13.75 27.5C13.75 31.1467 15.1987 34.6441 17.7773 37.2227C20.3559 39.8013 23.8533 41.25 27.5 41.25C31.1467 41.25 34.6441 39.8013 37.2227 37.2227C39.8013 34.6441 41.25 31.1467 41.25 27.5C41.25 23.8533 39.8013 20.3559 37.2227 17.7773C34.6441 15.1987 31.1467 13.75 27.5 13.75ZM45.375 13.0625C45.375 12.1508 45.0128 11.2765 44.3682 10.6318C43.7235 9.98716 42.8492 9.625 41.9375 9.625C41.0258 9.625 40.1515 9.98716 39.5068 10.6318C38.8622 11.2765 38.5 12.1508 38.5 13.0625C38.5 13.9742 38.8622 14.8485 39.5068 15.4932C40.1515 16.1378 41.0258 16.5 41.9375 16.5C42.8492 16.5 43.7235 16.1378 44.3682 15.4932C45.0128 14.8485 45.375 13.9742 45.375 13.0625ZM27.5 19.25C29.688 19.25 31.7865 20.1192 33.3336 21.6664C34.8808 23.2135 35.75 25.312 35.75 27.5C35.75 29.688 34.8808 31.7865 33.3336 33.3336C31.7865 34.8808 29.688 35.75 27.5 35.75C25.312 35.75 23.2135 34.8808 21.6664 33.3336C20.1192 31.7865 19.25 29.688 19.25 27.5C19.25 25.312 20.1192 23.2135 21.6664 21.6664C23.2135 20.1192 25.312 19.25 27.5 19.25Z"
+                fill="#D6BA8B"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              width="56"
+              height="39"
+              viewBox="0 0 56 46"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M56 5.41176C53.9388 6.35882 51.717 6.98118 49.4149 7.27882C51.7706 5.84471 53.5908 3.57176 54.4474 0.838823C52.2256 2.19176 49.7629 3.13882 47.1663 3.68C45.0516 1.35294 42.0803 0 38.7075 0C32.4168 0 27.2772 5.19529 27.2772 11.6082C27.2772 12.5282 27.3843 13.4212 27.5717 14.26C18.0421 13.7729 9.55641 9.14588 3.90822 2.13765C2.91778 3.84235 2.35564 5.84471 2.35564 7.95529C2.35564 11.9871 4.36329 15.5588 7.46845 17.5882C5.56788 17.5882 3.80115 17.0471 2.24857 16.2353V16.3165C2.24857 21.9447 6.21033 26.6529 11.457 27.7082C9.7725 28.1742 8.00408 28.239 6.29063 27.8976C7.01769 30.2044 8.44159 32.2228 10.3622 33.6691C12.2828 35.1155 14.6035 35.917 16.9981 35.9612C12.939 39.2094 7.90745 40.9652 2.7304 40.94C1.82027 40.94 0.910134 40.8859 0 40.7776C5.08604 44.0788 11.1358 46 17.6138 46C38.7075 46 50.2983 28.3035 50.2983 12.9612C50.2983 12.4471 50.2983 11.96 50.2715 11.4459C52.5201 9.82235 54.4474 7.76588 56 5.41176Z"
+                fill="#D6BA8B"
+              />
+            </svg>
+          </a>
+        </div>
+      </redes>
+      <horarios class="Footer__horarios">
+        <ul>
+          <li>Lunes a viernes de 13 a 04hs</li>
+          <li>Sábados de 08 a 04hs</li>
+          <li>Domingos de 18 a 04hs</li>
+        </ul>
+      </horarios>
+    </footer>
+    <!--Termina el Footer-->
+    <!--Empieza Animacion-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--Termina Animacion-->
+    <!--Empieza Boostrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <!--Termina Boostrap-->
+  </body>
+</html>
